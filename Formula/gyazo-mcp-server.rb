@@ -1,26 +1,26 @@
 class GyazoMcpServer < Formula
   desc "Local MCP server for Gyazo with HTTP and stdio transport support"
   homepage "https://github.com/ishii-masaki-646/gyazo-mcp-server"
-  version "0.5.0"
+  version "0.5.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ishii-masaki-646/gyazo-mcp-server/releases/download/v0.5.0/gyazo-mcp-server-aarch64-apple-darwin.tar.gz"
-      sha256 "50bc543205e5a74fa8389cef8bf532f7f7f5d84655b22fc34824b37a2099cb79"
+      url "https://github.com/ishii-masaki-646/gyazo-mcp-server/releases/download/v0.5.1/gyazo-mcp-server-aarch64-apple-darwin.tar.gz"
+      sha256 "53a12b6a52c1bc85011857eca1317e0f844a32e75aabc6ca137a816b994a94e2"
     else
-      url "https://github.com/ishii-masaki-646/gyazo-mcp-server/releases/download/v0.5.0/gyazo-mcp-server-x86_64-apple-darwin.tar.gz"
-      sha256 "72983a388298dc2338018f121241815e06b28307cdaf7fd07cb450816f0375ae"
+      url "https://github.com/ishii-masaki-646/gyazo-mcp-server/releases/download/v0.5.1/gyazo-mcp-server-x86_64-apple-darwin.tar.gz"
+      sha256 "7e7524debc4f3f08a60dcbe26b12e67b4287314c6074cd76bbacc94bb9c257e2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ishii-masaki-646/gyazo-mcp-server/releases/download/v0.5.0/gyazo-mcp-server-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f2e1b7731522bf8a3702bad3f435e295233a7580123cc8c738ae6f55c91f68fb"
+      url "https://github.com/ishii-masaki-646/gyazo-mcp-server/releases/download/v0.5.1/gyazo-mcp-server-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3af64cf52727501c9abf0001903ede1304bdd6a0829d0cb5c065fc8d8f9f56de"
     else
-      url "https://github.com/ishii-masaki-646/gyazo-mcp-server/releases/download/v0.5.0/gyazo-mcp-server-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "554735a44203bbda89b9393e0da0d41e18b67fee46e904f1893cdb101279902f"
+      url "https://github.com/ishii-masaki-646/gyazo-mcp-server/releases/download/v0.5.1/gyazo-mcp-server-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a12b81a83842fc3a870fd25c1bb519281010675b19abf624de3b79447e584730"
     end
   end
 
